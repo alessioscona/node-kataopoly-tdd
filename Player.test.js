@@ -2,7 +2,7 @@ const test = require('node:test');
 
 const assert = require('assert/strict');
 
-const Player = require('./player.js')
+const Player = require('./Player.js')
 
 // Player on beginning location (numbered 0), rolls 7, ends up on location 7
 

@@ -2,9 +2,9 @@
   "name": "kataopoly-tdd",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Monopoly.js",
   "scripts": {
-    "test": "node player.test.js"
+    "test": "node Player.test.js"
   },
   "keywords": [],
   "author": "",
