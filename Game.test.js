@@ -21,25 +21,10 @@ test('Create a game with two players named Horse and Car.', () => {
 //Try to create a game with < 2 or > 8 players. When attempting to play the game, it will fail.
 test('Try to create a game with < 2 or > 8 players. When attempting to play the game, it will fail.', () => {
     const players = [];
-
-    let horse = new Player(0,"Horse")
-    players.push(horse);
-    let car = new Player(0,"Car")
-    players.push(car);
-    let car2 = new Player(0,"Car2")
-    players.push(car2);
-    let car3 = new Player(0,"Car3")
-    players.push(car3);
-    let car4 = new Player(0,"Car4")
-    players.push(car4);
-    let car5 = new Player(0,"Car5")
-    players.push(car5);
-    let car6 = new Player(0,"Car6")
-    players.push(car6);
-    let car7 = new Player(0,"Car7")
-    players.push(car7);
-    let car8 = new Player(0,"Car8")
-    players.push(car8);
+    for(let i = 0 ; i < 11; i++){
+        let horse = new Player(0,"Horse"+i);
+        players.push(horse);
+    }
 
     let gameTest = new Game(players)
     return assert.equal(gameTest.play(),false);
@@ -116,3 +101,4 @@ test('Create a game and play, verify that in every round the order of the player
         sameOrder
         ,true);
 });
+
